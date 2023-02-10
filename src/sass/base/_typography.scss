@@ -1,3 +1,9 @@
 /* ********* */
 /* @TYPOGRAPHY */
 /* ********* */
+@font-face {
+    font-family: 'tipografia';
+    src: url('/public/assets/font/Righteous-Regular.woff2') format('woff2'),
+         url('/public/assets/font/Righteous-Regular.woff') format('woff'),
+         url('/public/assets/font/Righteous-Regular.ttf')  format('truetype');
+  }

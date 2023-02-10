@@ -326,10 +326,6 @@ template {
 /* ********* */
 /* @TYPOGRAPHY */
 /* ********* */
-@font-face {
-  font-family: "tipografia";
-  src: url("/public/assets/font/Righteous-Regular.woff2") format("woff2"), url("/public/assets/font/Righteous-Regular.woff") format("woff"), url("/public/assets/font/Righteous-Regular.ttf") format("truetype");
-}
 /* ********* */
 /* @BUTTONS */
 /* ********* */
@@ -339,42 +335,12 @@ template {
 /* ********* */
 /* @HEADER */
 /* ********* */
-body {
-  background-color: #00BEDA;
-}
-
-.header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 /* ********* */
 /* @NAVIGATOR */
 /* ********* */
 /* ********* */
 /* @FOOTER */
 /* ********* */
-.footerIconos {
-  margin-top: 4rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.persona, .new, .contacto {
-  width: 40px;
-  height: 40px;
-}
-
 /* ********* */
 /* @FORMS */
 /* ********* */
@@ -384,24 +350,6 @@ body {
 /* ********* */
 /* @SIDEBAR */
 /* ********* */
-/* ********* */
-/* @MAIN */
-/* ********* */
-.main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.cajaIntroduccion {
-  width: 22rem;
-  height: 31rem;
-  background-color: #D9D9D9;
-}
-
 /* ********* */
 /* @HOME */
 /* ********* */
