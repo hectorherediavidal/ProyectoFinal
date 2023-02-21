@@ -1,11 +1,39 @@
 /* ********* */
 /* @HEADER */
 /* ********* */
-body{
-    background-color: #00BEDA;
+body {
+  background-color: map-get($colores, azul);
 }
 
-.header{
-    display: flex;
-    justify-content: center;
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.loginExcuss {
+  width: 170px;
+}
+.loginHeader {
+  display: flex;
+  justify-content: center;
+}
+
+// REGISTRO
+.registroExcuss {
+  width: 170px;
+}
+.registroHeader {
+  display: flex;
+  justify-content: center;
+}
+
+// RECORDAR CONTRASEÑA
+
+.recordarContraExcuss {
+  width: 170px;
+}
+
+.recordarContraHeader {
+  display: flex;
+  justify-content: center;
 }

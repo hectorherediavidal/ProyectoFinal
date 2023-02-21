@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ********* */
 /* @NORMALIZE */
 /* ********* */
@@ -328,11 +329,58 @@ template {
 /* ********* */
 @font-face {
   font-family: "tipografia";
-  src: url("/public/assets/font/Righteous-Regular.woff2") format("woff2"), url("/public/assets/font/Righteous-Regular.woff") format("woff"), url("/public/assets/font/Righteous-Regular.ttf") format("truetype");
+  src: url("../assets/font/Righteous-Regular.woff2") format("woff2"), url("../assets/font/Righteous-Regular.woff") format("woff"), url("../assets/font/Righteous-Regular.ttf") format("truetype");
 }
+.introduccionTexto {
+  text-align: center;
+  font-size: 19px;
+  font-family: "tipografia";
+  padding: 10px;
+}
+
+.recordarContraTitulo {
+  padding-left: 13px;
+  padding-right: 13px;
+  font-family: "tipografia";
+  font-size: 23px;
+}
+
+.recordarContraTexto {
+  font-family: "tipografia";
+  font-size: 17px;
+  margin-bottom: 60px;
+}
+
+.recordarContraAyuda {
+  margin-top: 60px;
+  font-family: "tipografia";
+  font-size: 16px;
+}
+
+.recordarContraContactame {
+  font-family: "tipografia";
+  font-size: 16px;
+  color: red;
+}
+
 /* ********* */
 /* @BUTTONS */
 /* ********* */
+.botonEmpezar {
+  font-family: "tipografia";
+  font-size: 38px;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding: 15px;
+  width: 200px;
+  height: 40px;
+  border-radius: 20px;
+  border: 3px solid black;
+}
+
 /* ********* */
 /* @BANNER */
 /* ********* */
@@ -352,14 +400,58 @@ body {
           justify-content: center;
 }
 
+.loginExcuss {
+  width: 170px;
+}
+
+.loginHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.registroExcuss {
+  width: 170px;
+}
+
+.registroHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.recordarContraExcuss {
+  width: 170px;
+}
+
+.recordarContraHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 /* ********* */
 /* @NAVIGATOR */
 /* ********* */
 /* ********* */
 /* @FOOTER */
 /* ********* */
+.footer {
+  position: absolute;
+  bottom: 33px;
+  width: 100%;
+}
+
 .footerIconos {
-  margin-top: 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -370,7 +462,9 @@ body {
           align-items: center;
 }
 
-.persona, .new, .contacto {
+.persona,
+.new,
+.contacto {
   width: 40px;
   height: 40px;
 }
@@ -378,6 +472,370 @@ body {
 /* ********* */
 /* @FORMS */
 /* ********* */
+.loginFormulario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.loginEmail {
+  padding: 3px 5px;
+  padding-left: 70px;
+  width: 200px;
+  height: 35px;
+  background: url(../assets/img/svg/iconoCorreo.svg) no-repeat;
+  background-size: 35px;
+  background-position: 15px center;
+  margin-bottom: 40px;
+  border: 3px solid black;
+}
+
+.loginEmail::-webkit-input-placeholder {
+  color: black;
+  font-family: "tipografia";
+  opacity: 40%;
+}
+
+.loginEmail::-moz-placeholder {
+  color: black;
+  font-family: "tipografia";
+  opacity: 40%;
+}
+
+.loginEmail:-ms-input-placeholder {
+  color: black;
+  font-family: "tipografia";
+  opacity: 40%;
+}
+
+.loginEmail::-ms-input-placeholder {
+  color: black;
+  font-family: "tipografia";
+  opacity: 40%;
+}
+
+.loginEmail::placeholder {
+  color: black;
+  font-family: "tipografia";
+  opacity: 40%;
+}
+
+.loginContraseña {
+  padding: 3px 5px;
+  padding-left: 70px;
+  width: 200px;
+  height: 35px;
+  background: url(../assets/img/svg/iconoLlave.svg) no-repeat;
+  background-size: 40px;
+  background-position: 13px center;
+  border: 3px solid black;
+}
+
+.loginContraseña::-webkit-input-placeholder {
+  color: black;
+  font-family: "tipografia";
+  opacity: 40%;
+}
+
+.loginContraseña::-moz-placeholder {
+  color: black;
+  font-family: "tipografia";
+  opacity: 40%;
+}
+
+.loginContraseña:-ms-input-placeholder {
+  color: black;
+  font-family: "tipografia";
+  opacity: 40%;
+}
+
+.loginContraseña::-ms-input-placeholder {
+  color: black;
+  font-family: "tipografia";
+  opacity: 40%;
+}
+
+.loginContraseña::placeholder {
+  color: black;
+  font-family: "tipografia";
+  opacity: 40%;
+}
+
+.olvidarContraseña {
+  margin-left: 90px;
+  margin-top: 40px;
+  color: black;
+  font-family: "tipografia";
+  font-size: 14px;
+}
+
+.loginEnviar {
+  margin-top: 50px;
+  border-radius: 20px;
+  width: 150px;
+  height: 50px;
+  background-color: transparent;
+  border: 3px solid black;
+  font-family: "tipografia";
+  font-size: 24px;
+}
+
+.registroFormulario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.registroNombre {
+  padding: 3px 5px;
+  padding-left: 70px;
+  width: 200px;
+  height: 35px;
+  background: url(../assets/img/svg/iconoPersona.svg) no-repeat;
+  background-size: 35px;
+  background-position: 15px center;
+  margin-bottom: 40px;
+  border: 3px solid black;
+}
+
+.registroNombre::-webkit-input-placeholder {
+  color: black;
+  font-family: "tipografia";
+  opacity: 40%;
+}
+
+.registroNombre::-moz-placeholder {
+  color: black;
+  font-family: "tipografia";
+  opacity: 40%;
+}
+
+.registroNombre:-ms-input-placeholder {
+  color: black;
+  font-family: "tipografia";
+  opacity: 40%;
+}
+
+.registroNombre::-ms-input-placeholder {
+  color: black;
+  font-family: "tipografia";
+  opacity: 40%;
+}
+
+.registroNombre::placeholder {
+  color: black;
+  font-family: "tipografia";
+  opacity: 40%;
+}
+
+.registroEmail {
+  padding: 3px 5px;
+  padding-left: 70px;
+  width: 200px;
+  height: 35px;
+  background: url(../assets/img/svg/iconoCorreo.svg) no-repeat;
+  background-size: 35px;
+  background-position: 15px center;
+  margin-bottom: 40px;
+  border: 3px solid black;
+}
+
+.registroEmail::-webkit-input-placeholder {
+  color: black;
+  font-family: "tipografia";
+  opacity: 40%;
+}
+
+.registroEmail::-moz-placeholder {
+  color: black;
+  font-family: "tipografia";
+  opacity: 40%;
+}
+
+.registroEmail:-ms-input-placeholder {
+  color: black;
+  font-family: "tipografia";
+  opacity: 40%;
+}
+
+.registroEmail::-ms-input-placeholder {
+  color: black;
+  font-family: "tipografia";
+  opacity: 40%;
+}
+
+.registroEmail::placeholder {
+  color: black;
+  font-family: "tipografia";
+  opacity: 40%;
+}
+
+.registroContraseña {
+  padding: 3px 5px;
+  padding-left: 70px;
+  width: 200px;
+  height: 35px;
+  background: url(../assets/img/svg/iconoLlave.svg) no-repeat;
+  background-size: 40px;
+  background-position: 13px center;
+  border: 3px solid black;
+}
+
+.registroContraseña::-webkit-input-placeholder {
+  color: black;
+  font-family: "tipografia";
+  opacity: 40%;
+}
+
+.registroContraseña::-moz-placeholder {
+  color: black;
+  font-family: "tipografia";
+  opacity: 40%;
+}
+
+.registroContraseña:-ms-input-placeholder {
+  color: black;
+  font-family: "tipografia";
+  opacity: 40%;
+}
+
+.registroContraseña::-ms-input-placeholder {
+  color: black;
+  font-family: "tipografia";
+  opacity: 40%;
+}
+
+.registroContraseña::placeholder {
+  color: black;
+  font-family: "tipografia";
+  opacity: 40%;
+}
+
+.registroEnviar {
+  margin-top: 50px;
+  border-radius: 20px;
+  width: 150px;
+  height: 50px;
+  background-color: transparent;
+  border: 3px solid black;
+  font-family: "tipografia";
+  font-size: 24px;
+}
+
+.registroRepetirContraseña {
+  margin-top: 50px;
+  padding: 3px 5px;
+  padding-left: 70px;
+  width: 200px;
+  height: 35px;
+  background: url(../assets/img/svg/iconoLlave.svg) no-repeat;
+  background-size: 40px;
+  background-position: 13px center;
+  border: 3px solid black;
+}
+
+.registroRepetirContraseña::-webkit-input-placeholder {
+  color: black;
+  font-family: "tipografia";
+  opacity: 40%;
+}
+
+.registroRepetirContraseña::-moz-placeholder {
+  color: black;
+  font-family: "tipografia";
+  opacity: 40%;
+}
+
+.registroRepetirContraseña:-ms-input-placeholder {
+  color: black;
+  font-family: "tipografia";
+  opacity: 40%;
+}
+
+.registroRepetirContraseña::-ms-input-placeholder {
+  color: black;
+  font-family: "tipografia";
+  opacity: 40%;
+}
+
+.registroRepetirContraseña::placeholder {
+  color: black;
+  font-family: "tipografia";
+  opacity: 40%;
+}
+
+.recordarContraEmail {
+  padding: 3px 5px;
+  padding-left: 70px;
+  width: 200px;
+  height: 35px;
+  background: url(../assets/img/svg/iconoCorreo.svg) no-repeat;
+  background-size: 35px;
+  background-position: 15px center;
+  border: 3px solid black;
+}
+
+.recordarContraEmail::-webkit-input-placeholder {
+  color: black;
+  font-family: "tipografia";
+  opacity: 40%;
+}
+
+.recordarContraEmail::-moz-placeholder {
+  color: black;
+  font-family: "tipografia";
+  opacity: 40%;
+}
+
+.recordarContraEmail:-ms-input-placeholder {
+  color: black;
+  font-family: "tipografia";
+  opacity: 40%;
+}
+
+.recordarContraEmail::-ms-input-placeholder {
+  color: black;
+  font-family: "tipografia";
+  opacity: 40%;
+}
+
+.recordarContraEmail::placeholder {
+  color: black;
+  font-family: "tipografia";
+  opacity: 40%;
+}
+
+.recordarContraEnviar {
+  margin-top: 10px;
+  border-radius: 20px;
+  width: 150px;
+  height: 50px;
+  background-color: transparent;
+  border: 3px solid black;
+  font-family: "tipografia";
+  font-size: 24px;
+}
+
 /* ********* */
 /* @GRID*/
 /* ********* */
@@ -399,6 +857,166 @@ body {
 .cajaIntroduccion {
   width: 22rem;
   height: 31rem;
+  border-radius: 10px;
+  background-color: #D9D9D9;
+}
+
+.sectionBotonEmpezar {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.loginMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.loginCaja {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 22rem;
+  height: 23rem;
+  background-color: #D9D9D9;
+}
+
+.olvidarContraseña {
+  margin-left: 90px;
+  margin-top: 40px;
+  color: black;
+  font-family: "tipografia";
+  font-size: 14px;
+}
+
+.crearCuenta {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 22rem;
+  height: 8rem;
+  background-color: #D9D9D9;
+}
+
+.crearCuentaParrafo {
+  font-family: "tipografia";
+  color: black;
+  font-size: 30px;
+}
+
+.crearCuentaEnlace {
+  color: red;
+  margin-top: -20px;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: "tipografia";
+}
+
+.registroMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.registroCaja {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 22rem;
+  height: 30rem;
+  background-color: #D9D9D9;
+}
+
+.recordarContraMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.recordarContraCaja {
+  border-radius: 10px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 22rem;
+  height: 30rem;
   background-color: #D9D9D9;
 }
 

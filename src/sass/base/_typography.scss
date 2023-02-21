@@ -3,7 +3,45 @@
 /* ********* */
 @font-face {
     font-family: 'tipografia';
-    src: url('/public/assets/font/Righteous-Regular.woff2') format('woff2'),
-         url('/public/assets/font/Righteous-Regular.woff') format('woff'),
-         url('/public/assets/font/Righteous-Regular.ttf')  format('truetype');
+    src: url('../assets/font/Righteous-Regular.woff2') format('woff2'),
+         url('../assets/font/Righteous-Regular.woff') format('woff'),
+         url('../assets/font/Righteous-Regular.ttf')  format('truetype');
+         
   }
+
+
+.introduccionTexto{
+    text-align: center;
+    font-size: 19px;
+    font-family:'tipografia';
+    padding:10px;
+}
+
+// RECORDAR CONTRASEÑA
+
+.recordarContraTitulo{
+    padding-left: 13px;
+    padding-right: 13px;
+    font-family: "tipografia";
+    font-size: 23px;
+}
+
+.recordarContraTexto{
+    font-family: "tipografia";
+    font-size: 17px;
+    margin-bottom: 60px;
+}
+
+
+.recordarContraAyuda{
+    margin-top: 60px;
+    font-family: "tipografia";
+    font-size: 16px;
+}
+
+.recordarContraContactame{
+    font-family: "tipografia";
+    font-size: 16px;
+    color: red;
+
+}
